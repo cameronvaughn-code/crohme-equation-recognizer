@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+_smoke.py
+_diag.py
+
+# Data: keep the source zip, ignore everything derived from it
+data/extracted/
+data/processed/
+
+# Training artifacts: keep the shipped checkpoints + history, ignore the rest
+checkpoints/*
+!checkpoints/best.pt
+!checkpoints/gru_best.pt
+!checkpoints/history.json
+runs/
+*.log
+
+# Script outputs are regenerable; the committed copies live in assets/
+outputs/
+!outputs/.gitkeep
+
+# OS
+.DS_Store

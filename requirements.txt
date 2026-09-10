@@ -1,0 +1,10 @@
+# Pinned for Apple Silicon on macOS 13 (Ventura): torch 2.3+ wheels require
+# macOS 14+ for MPS, so this project targets the 2.2.x line. numpy is held
+# below 2.0 because the torch 2.2.x wheels are built against NumPy 1.x.
+torch==2.2.2
+torchvision==0.17.2
+numpy<2
+Pillow>=9.5.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+certifi>=2023.0.0
